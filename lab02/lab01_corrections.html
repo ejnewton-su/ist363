@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eli Newton</title>
+    <style>
+        body {
+            background-color: #E38E49; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {color: #0A3981; text-align: center;}
+        strong {color: #E38E49;}
+
+        .flexbox {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flexbox div {
+            flex: 1;
+        }
+        img {
+            width: 100%;
+            min-width: 250px;
+        }
+        .container {
+            background-color: #D4EBF8; 
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            
+        }
+        .center {
+            margin: 0px 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <h1>Eli Newton</h1>
+            <p>Something <strong>personal</strong> about me is that I was a varsity swimmer in high school focusing mostly on long distance swimming. Something <strong>professional</strong> about me is that I worked as a Purchasing Intern for ITT over the summer. And finally, something <strong>peculiar</strong> about me is that I am allergic to onions.</p>
+            <div class="flexbox">
+                <div><img src="../images/lab01_eli_newton.png" alt="Image of Eli Newton"></div>
+                <div><img src="../images/lab01_swimming.jpg" alt="Personal Image of Swimming"></div>
+            </div>
+            <div class="flexbox">
+                <div><img src="../images/lab01_itt_logo.png" alt="Professional Image of ITT"></div>
+                <div><img src="../images/lab01_onion.jpg" alt="Peculiar image of an onion"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

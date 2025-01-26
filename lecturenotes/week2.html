@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 - Animation</title>
+    <style>
+        .circle {
+            width: 100px;
+            border-radius: 50px;
+            background-color: lightskyblue;
+            text-align: center;
+            transition: 1s;
+            padding: 50px 0px;
+            line-height: 0px;
+            margin: 0 auto;
+            color: #FFFFFF;
+        }
+        .circle:hover {
+            background-color: blue;
+            transform: rotate(360deg);
+        }
+        .otto {
+            animation-name: otto;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            position: absolute;
+            left: -50px;
+            animation-iteration-count: infinite;
+        }
+        @keyframes otto {
+            from { transform: translateX(-50px) }
+            to { transform: translateX(1600px) }
+        }
+        .space {
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">Go Orange!</div>
+    <div class="space"></div>
+    <img src="https://laferger.github.io/ist363/images/otto-on-skateboard.png" class="otto">
+</body>
+</html>
