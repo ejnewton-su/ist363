@@ -69,13 +69,6 @@ footer {
     }
 }
 
-.latest_recipes {
-    @include flexbox;
-    @include centering;
-    @include basic_format;
-    color: $white;
-}
-
 .newsletter {
     @include centering;
     @include border;
