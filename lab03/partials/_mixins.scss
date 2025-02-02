@@ -1,0 +1,19 @@
+@mixin flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin centering {
+    margin: 0 auto;
+    text-align: center;
+}
+
+@mixin border {
+    border-radius: 10px;
+    border: 0px;
+}
+
+@mixin basic_format {
+    margin: 10px;
+    padding: 10px;
+}

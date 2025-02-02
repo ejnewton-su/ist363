@@ -1,0 +1,287 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul, footer ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Arial", "Helevetica", "sans-serif";
+  line-height: 1.6;
+}
+body main {
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #e89b6a;
+}
+header h1 {
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.6em;
+  padding: 20px;
+  background-color: #e89b6a;
+}
+header nav, header footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e89b6a;
+  padding: 15px;
+  margin: 0 auto;
+}
+header nav div a, header footer div a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px;
+  margin-top: 20px;
+}
+header nav div a:hover, header footer div a:hover {
+  background-color: #e2625c;
+  transition: 1s;
+  transform: scale(1.3);
+}
+
+h2 {
+  color: #e2625c;
+  font-size: 1.3em;
+}
+
+.blank_space {
+  margin: 20px;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #8ae2c8;
+  color: #ffffff;
+  margin-top: 10px;
+  padding: 20px;
+  position: absolute;
+  width: 99%;
+}
+footer span {
+  margin: 15px;
+}
+
+.latest_recipes {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.newsletter {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  border: 0px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #e4fdc3;
+}
+
+.newsletter div, .about div {
+  margin: 10px;
+}
+
+.newsletter_button, .about_button {
+  background-color: #e89b6a;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter_input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.big_image {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  border: 0px;
+  margin: 10px;
+  padding: 10px;
+}
+.big_image img {
+  border-radius: 10px;
+  border: 0px;
+  width: 100%;
+}
+
+.about {
+  margin: 0 auto;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.about div p {
+  padding: 30px;
+}
+
+.about_button {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.latest_recipes, .older_recipes {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  border: 0px;
+  margin: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  color: #e2625c;
+  justify-content: right;
+  align-items: flex-start;
+  gap: 30px;
+}
+.latest_recipes h2, .older_recipes h2 {
+  flex: 1;
+  margin-top: 20px;
+  max-width: 200px;
+}
+.latest_recipes div, .older_recipes div {
+  flex: 0 0 15%;
+}
+.latest_recipes div p, .older_recipes div p {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: bold;
+}
+.latest_recipes div img, .older_recipes div img {
+  border-radius: 10px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+@media (max-width: 770px) {
+  .latest_recipes, .older_recipes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .latest_recipes h2, .older_recipes h2 {
+    max-width: 100%;
+  }
+  .latest_recipes div, .older_recipes div {
+    flex: 1 1 100%;
+  }
+  .latest_recipes div img, .older_recipes div img {
+    width: 70%;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=styles.css.map */
