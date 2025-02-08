@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 04 -- Eli Newton</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+    <header class="bg-indigo-900 flex flex-wrap justify-between p-2">
+        <h1 class="text-yellow-400 font-bold text-xl">Orange <span class="text-white">News</span></h1>
+        <nav class="text-gray-400 max-md:hidden">
+            <a href="#" class="p-2">Home</a>
+            <a href="#" class="p-2">Latest</a>
+            <a href="#" class="p-2">Scores</a>
+            <a href="#" class="p-2">Videos</a>
+            <a href="#" class="p-2">More</a>
+        </nav>
+    </header>
+    <div class="m-3.5">
+        <div class="h-96 overflow-hidden rounded-t-lg">
+            <img src="./images/campus.jpg" alt="Image of Syracuse Campus" class="h-full w-full object-cover object-center">
+        </div>
+        <div class="bg-gray-800 text-white p-3 rounded-b-lg">
+            <h2 class="font-bold text-lg">Will the Snow Ever Thaw?</h2>
+            <p class="text-sm">Get the latest scoop on the weather and everything that effects the jet stream.</p>
+        </div>
+    </div>
+    <h2 class="text-lg font-bold m-3.5">More Featured Stories</h2>
+    <div class="flex flex-wrap m-3.5 justify-between max-md:flex-col">
+        <div class="flex-1 md:mr-6 max-md:mb-4">
+            <img src="./images/graduates.jpg" alt="Graduation photo" class="rounded-t-lg">
+            <div class="shadow-lg p-3 rounded-b-lg">
+                <h3 class="font-bold">Graduation 2025</h3>
+                <p class="text-sm">Invite your friends and family to join us in May.</p>
+            </div>
+        </div>
+        <div class="flex-1 md:mr-6 max-md:mb-4">
+            <img src="./images/runners.jpg" alt="Runners" class="rounded-t-lg">
+            <div class="shadow-lg p-3 rounded-b-lg">
+                <h3 class="font-bold">Workplace Run</h3>
+                <p class="text-sm">Run a 5k with your colleagues.</p>
+            </div>
+        </div>
+        <div class="flex-1 max-md:mb-4">
+            <img src="./images/artshow.jpg" alt="Art show" class="rounded-t-lg">
+            <div class="shadow-lg p-3 rounded-b-lg">
+                <h3 class="font-bold">Art Show</h3>
+                <p class="text-sm">The best art of the year on display at Shaffer.</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-wrap m-3.5 max-md:flex-col">
+        <div class="flex-1">
+            <h2 class="font-bold text-lg m-3.5">Top Headlines</h2>
+            <div class="flex-1 shadow-lg mb-6 rounded-lg p-3">
+                <h3 class="font-bold">Player X Breaks Record</h3>
+                <p class="text-sm">The record breaking performance from Player X stunned fans everywhere.</p>
+            </div>
+            <div class="flex-1 shadow-lg mb-6 rounded-lg p-3">
+                <h3 class="font-bold">Team Y Wins Championship</h3>
+                <p class="text-sm">In an epic showdown, Team Y came out on top with a historic victory.</p>
+            </div>
+            <div class="flex-1 shadow-lg mb-6 rounded-lg p-3">
+                <h3 class="font-bold">Athlete Z Announces Retirement</h3>
+                <p class="text-sm">Athlete Z's retirement shocked the sports world.</p>
+            </div>
+        </div>
+        <div class="flex-1 md:ml-8">
+            <h2 class="font-bold text-lg m-3.5">Game Scores</h2>
+            <div class="shadow-lg rounded-lg max-md:mb-4">
+                <table class="w-full table-auto">
+                    <thead class="font-bold">
+                        <th class="px-4 py-2 text-left">Game</th>
+                        <th class="px-4 py-2 text-left">Score</th>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-t">
+                            <td class="px-4 py-3">Women's Hockey vs. Miami</td>
+                            <td class="px-4 py-3">3 - 1</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">Men's Lacrosse vs. St Bonaventure</td>
+                            <td class="px-4 py-3">7 - 18</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">Men's Basketball vs. Duke</td>
+                            <td class="px-4 py-3">98 - 75</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-800 p-4 m-3.5 rounded-lg">
+        <h2 class="font-bold text-lg text-white p-2">Subscribe to Our Newsletter</h2>
+        <p class="text-white text-sm p-2">Stay updated with the latest news, scores, and exclusive content delivered straight to your inbox!</p>
+        <form action="" class="p-2">
+            <input type="email" placeholder="Enter Your Email" required class="p-2 md:w-96 max-md:w-80 rounded-lg">
+            <div><button type="submit" class="text-black text-sm bg-yellow-400 text-center p-2 w-40 rounded-lg mt-2">Subscribe</button></div>
+        </form>
+    </div>
+</body>
+</html>
