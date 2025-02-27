@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 07 -- Eli Newton</title>
+</head>
+<body>
+    <h1>Lab 07 -- JavaScript Examples</h1>
+    <script>
+        // #1
+        let favNumber = 7;
+        console.log("#1 -- My favorite number is " + favNumber + ".");
+
+        // #2
+        let favoriteFoods = ["Ice Cream", "Pizza", "Lasagna", "Burgers"];
+        console.log("#2 -- My second favorite food is " + favoriteFoods[1]);
+        favoriteFoods.push("Gelato");
+        console.log("#2 -- Favorite Foods Array: " + favoriteFoods);
+
+        // #3
+        for (let i = 0; i < favoriteFoods.length; i++){
+            console.log("#3 -- My favorite food #" + (i + 1) + " is " + favoriteFoods[i] + ".");
+        }
+
+        // #4
+        for (let i = 0; i < favoriteFoods.length; i++){
+            if(i == 1){
+                continue;
+            }
+            console.log("#4 -- My favorite food #" + (i + 1) + " is " + favoriteFoods[i] + ".");
+        }
+
+        // #5
+        let book = {
+            title: "Red Rising",
+            author: "Pierce Brown",
+            yearPublished: 2014,
+            isPublished: true
+        };
+        console.log("#5 -- This book is " + book["title"] + " written by " + book["author"] + ".");
+        if(book["isPublished"] == true){
+            console.log("#5 -- This book is available for checkout.");
+        }else{
+            console.log("5 -- Sorry this book is currently checked out.");
+        }
+
+        // #6
+        let x = 1;
+        while (x <= 20){
+            x++;
+            if(x % 2 == 0){
+                console.log("#6 -- " + x + " is even");
+            }
+        }
+
+        // #7 
+        let dice = 1;
+        dice = Math.floor(Math.random() * 6) + 1;
+        console.log("#7 -- Dice roll is " + dice);
+    </script>
+</body>
+</html>

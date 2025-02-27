@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7</title>
+    <!-- Include external JS file -->
+    <script src="example.js"></script>
+</head>
+<body>
+    <h1>JavaScript Basics</h1>
+    <!-- This is how you include JS internally -->
+    <script>
+        // dog years
+        let dogAge = 14;
+        let type = "cat";
+        let petAge; // can only declare a variable once w/ let
+        if(type == "dog"){
+            petAge = dogAge * 7;
+        }else if(type == "cat"){
+            petAge = dogAge * 4;
+        }
+        console.log(petAge);
+    </script>
+    <script>
+        // JS comment
+        console.log("Hello World");
+
+        let firstName = "Eli";
+        let age = 21;
+        let isIschool = true;
+        let space = " ";
+        console.log(firstName + space + age + space + isIschool);
+
+        let x = 2 * 2034;
+        console.log(x);
+        console.log(1 == 2);
+        console.log(2<1 && 1<2); // false (both must be true) -- && = and
+        console.log(2<1 || 1<2); // true (only 1 must be true) -- || = or
+        console.log(10 == 20 || 20 == 10); // false
+    </script>
+    <script>
+        let gpa = 3.4;
+        if(gpa >= 3.5){
+            console.log("You made the dean's list");
+        }else if(gpa < 3.5){
+            console.log("You did not make the dean's list");
+        }
+    </script>
+</body>
+</html>
