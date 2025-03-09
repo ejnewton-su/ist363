@@ -70,11 +70,11 @@
             document.getElementById("mscore").innerText = monsterShield;
             document.getElementById("gscore").innerText = girlShield;
             if(monsterShield <= 0 && girlShield <= 0){
-                endGame("Both lost!", ["monster", "girl"]);
+                endGame("Both Lost!", ["monster", "girl"]);
             }else if(monsterShield <= 0){
-                endGame("Girl won!", ["monster"]);
+                endGame("Girl Won!", ["monster"]);
             }else if(girlShield <= 0){
-                endGame("Monster won!", ["girl"]);
+                endGame("Monster Won!", ["girl"]);
             }
         }
 
