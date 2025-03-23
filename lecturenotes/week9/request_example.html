@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Our First Request</h1>
+    <div id="data"></div>
+
+    <script>
+
+        // STEP #4: Use the data
+        function reportResults(response){
+            let browserData = "";
+            if(response != "error"){
+                const myData = JSON.parse(response); // changes text to arrays and objects
+                for(i = 0; i < myData.length; i++){
+                    browserData += "#" + (i + 1) + ": " + myData[i].title + "<br>";
+                }
+            }else if(response == "error"){
+                console.log("Could not get data");
+            }
+            document.getElementById("data").innerHTML = browserData;
+        }
+
+        // STEP #1: make a request object
+        const request = new XMLHttpRequest(); // makes an object to make a request (request is not made yet)
+        const endpoint = "https://jsonplaceholder.typicode.com/todos/";
+
+        // STEP #2: Check status of request (EventListener)
+        request.addEventListener("readystatechange", () => { // listening for a state change (1-4), just rly want to listen for request complete
+            if(request.readyState === 4 && request.status === 200){ // if request is complete (4) and data loaded (200)
+                reportResults(request.responseText);
+                //console.log(request, request.responseText); // logging response back
+            }else if(request.readyState === 4){ // if request is complete and did not get status 200
+                reportResults("error");
+            }
+        });
+
+        // STEP #3: Open end point & send request
+        request.open("GET", endpoint); // set up kind of request, and endpoint URL
+        request.send(); // actually getting data
+    </script>
+</body>
+</html>
