@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #0b0c10;
+    color: #f1f1f1;
+}
+
+header {
+    background-color: #1f2833;
+    padding: 24px;
+    text-align: center;
+    border-bottom: 2px solid #c50000;
+}
+
+header h1 {
+    color: #ffcc00;
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav {
+    margin-top: 24px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.content-section {
+    padding: 32px;
+}
+
+#movie-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1f2833;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
+
+#movie-details, #trailer-video {
+    flex: 1 1 100%;
+    padding: 16px;
+}
+
+#movie-details h3 {
+    color: #ffcc00;
+}
+
+@media (min-width: 769px) {
+    #movie-details, #trailer-video {
+        flex: 1 1 45%;  
+    }   
+
+    #trailer-video {
+        margin-left: 32px;
+    }
+}
+
+#trailer-video iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+}
+
+#poster-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px;
+}
+
+#poster-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #c50000;
+    transition: transform 0.2s ease;
+    flex: 1 1 calc(20% - 16px);
+    max-width: calc(20% - 16px);
+    margin: 7px;
+}
+
+#poster-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffcc00;
+}
+
+footer {
+    background-color: #1f2833;
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
+    border-top: 2px solid #c50000;
+}
+
+footer p {
+    color: #888888;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    #movie-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #poster-grid img {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    #trailer-video iframe {
+        height: auto;
+    }
+}  
