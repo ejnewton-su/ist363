@@ -10,11 +10,14 @@ async function fetchMovieDetails(){
     );
     const data = await res.json();
     const movie = data.results[0];
+    console.log(movie);
 
     const detailHTML = `
       <h3>${movie.title}</h3>
       <p><strong>Release Date:</strong> ${movie.release_date}</p>
-      <p><strong>Overview:</strong> ${movie.overview}</p>
+      <p><strong>Original Language:</strong> ${movie.original_language === "en" ? "English" : movie.original_language}</p>
+      <p><strong>Rating:</strong> ${movie.adult ? "R" : "PG-13"}</p>
+      <p><strong>Description:</strong> ${movie.overview}</p>
     `;
 
     document.getElementById("movie-details").innerHTML = detailHTML;
